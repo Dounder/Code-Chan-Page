@@ -1,3 +1,9 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 /* id's */
 
 #header nav>div a:hover {
@@ -7,4 +13,68 @@
 #new #carousel img {
     object-fit: cover;
     max-height: 70vh;
+}
+
+#broadcast #group-title img {
+    width: 8%;
+}
+
+#broadcast #group-name #play-logo {
+    width: 25px;
+    filter: grayscale(100%);
+    transition: 400ms;
+    object-fit: cover;
+}
+
+#broadcast #group-name-item:hover #play-logo {
+    filter: grayscale(0);
+    transition: 400ms;
+}
+
+#broadcast #group-name-item p {
+    max-width: 35ch;
+}
+
+#broadcast #group-name-item #item-category {
+    filter: saturate(20%);
+    font-size: 12px;
+    width: 70px;
+}
+
+#broadcast #group-name-item:hover #item-category {
+    filter: saturate(100%);
+    transition: 400ms;
+    color: white;
+}
+
+#footer {
+    background-color: #212529;
+}
+
+#footer ul {
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#footer ul li a {
+    color: white;
+    transition: 400ms;
+}
+
+#footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: 400ms;
+}
+
+#footer>div img {
+    filter: invert(0);
+    transition: 400ms;
+}
+
+#footer>div img:hover {
+    filter: invert(70%);
+    transition: 400ms;
 }
