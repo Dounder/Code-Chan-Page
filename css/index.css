@@ -1,0 +1,10 @@
+/* id's */
+
+#header nav>div a:hover {
+    color: white;
+}
+
+#new #carousel img {
+    object-fit: cover;
+    max-height: 70vh;
+}
