@@ -1,3 +1,9 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -6,42 +12,151 @@ a {
 
 /* id's */
 
+
+/* header */
+
 #header nav>div a:hover {
     color: white;
 }
+
+
+/* carousel */
 
 #new #carousel img {
     object-fit: cover;
     max-height: 70vh;
 }
 
-#broadcast #group-name #play-logo {
+
+/* Sidebar de emision */
+
+#main #broadcast #group-name #play-logo {
     width: 25px;
     filter: grayscale(100%);
     transition: 400ms;
     object-fit: cover;
 }
 
-#broadcast #group-name-item:hover #play-logo {
+#main #broadcast #group-name-item:hover #play-logo {
     filter: grayscale(0);
     transition: 400ms;
 }
 
-#broadcast #group-name-item p {
-    max-width: 31ch;
+#main #broadcast #group-name-item p {
+    max-width: 33ch;
 }
 
-#broadcast #group-name-item #item-category {
+#main #broadcast #group-name-item #item-category {
     filter: saturate(20%);
     font-size: 12px;
     width: 70px;
 }
 
-#broadcast #group-name-item:hover #item-category {
+#main #broadcast #group-name-item:hover #item-category {
     filter: saturate(100%);
     transition: 400ms;
     color: white;
 }
+
+
+/* Seccion de los ultimos agregados */
+
+
+/* Seccion de los ultimos episodios agregados */
+
+#episode #episode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+}
+
+#episode #episode-container figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#episode #episode-container figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: cover;
+}
+
+#episode #episode-container figure:hover>img {
+    transform: scale(1.3);
+}
+
+#episode #episode-container figure #episode-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    padding: 10px;
+    transition: all 500ms ease-out;
+    padding-top: 100px;
+}
+
+#episode #episode-container figure:hover #episode-overlay {
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 500ms ease-out;
+}
+
+
+/* Seccion de las ultimas series agregadas */
+
+#series #series-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+#series #series-container figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#series #series-container figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: cover;
+}
+
+#series #series-container figure:hover>img {
+    transform: scale(1.3);
+}
+
+#series #series-container figure #series-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    padding: 10px;
+    transition: all 500ms ease-out;
+    padding-top: 250px;
+}
+
+#series #series-container figure:hover #series-overlay {
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 500ms ease-out;
+}
+
+
+/* footer */
 
 #footer {
     background-color: #212529;
@@ -75,25 +190,28 @@ a {
     transition: 400ms;
 }
 
+
+/* Media Quries */
+
 @media screen and (max-width: 900px) {
     #new #carousel img {
         object-fit: cover;
         max-height: 30vh;
     }
-    #broadcast #group-name-item p {
+    #main #broadcast #group-name-item p {
         max-width: 20ch;
     }
-    #broadcast #group-name #group-name-item img {
+    #main #broadcast #group-name #group-name-item img {
         filter: saturate(100%);
         width: 7%;
         object-fit: contain;
     }
-    #broadcast #group-name #group-name-item #item-category {
+    #main #broadcast #group-name #group-name-item #item-category {
         filter: saturate(100%);
         width: 70px;
         font-size: 10px;
     }
-    #broadcast #group-name #play-logo {
+    #main #broadcast #group-name #play-logo {
         width: 25px;
         object-fit: cover;
     }
@@ -103,6 +221,13 @@ a {
     #footer img {
         width: 30%;
     }
+    #episode #episode-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -110,24 +235,35 @@ a {
         object-fit: cover;
         max-height: 25vh;
     }
-    #broadcast #group-name-item p {
-        max-width: 30ch;
+    #main #broadcast #group-name-item p {
+        max-width: 27ch;
     }
-    #broadcast #group-name #group-name-item img {
+    #main #broadcast #group-name #group-name-item img {
         filter: saturate(100%);
     }
-    #broadcast #group-name #group-name-item #item-category {
+    #main #broadcast #group-name #group-name-item #item-category {
         filter: saturate(100%);
     }
-    #broadcast #group-name #play-logo {
+    #main #broadcast #group-name #play-logo {
         width: 25px;
         object-fit: cover;
     }
-    #broadcast #group-name-item #item-category {
+    #main #broadcast #group-name-item #item-category {
         font-size: 10px;
         width: 60px;
     }
     #footer img {
         width: 12%;
+    }
+    #episode #episode-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        padding: 0 10px;
+    }
+    #episode #episode-container figure #episode-overlay {
+        padding-top: 160px;
     }
 }
