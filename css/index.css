@@ -15,10 +15,6 @@ a {
     max-height: 70vh;
 }
 
-#broadcast #group-title img {
-    width: 8%;
-}
-
 #broadcast #group-name #play-logo {
     width: 25px;
     filter: grayscale(100%);
@@ -32,7 +28,7 @@ a {
 }
 
 #broadcast #group-name-item p {
-    max-width: 35ch;
+    max-width: 31ch;
 }
 
 #broadcast #group-name-item #item-category {
@@ -77,4 +73,61 @@ a {
 #footer>div img:hover {
     filter: invert(70%);
     transition: 400ms;
+}
+
+@media screen and (max-width: 900px) {
+    #new #carousel img {
+        object-fit: cover;
+        max-height: 30vh;
+    }
+    #broadcast #group-name-item p {
+        max-width: 20ch;
+    }
+    #broadcast #group-name #group-name-item img {
+        filter: saturate(100%);
+        width: 7%;
+        object-fit: contain;
+    }
+    #broadcast #group-name #group-name-item #item-category {
+        filter: saturate(100%);
+        width: 70px;
+        font-size: 10px;
+    }
+    #broadcast #group-name #play-logo {
+        width: 25px;
+        object-fit: cover;
+    }
+    #footer a {
+        font-size: 12px;
+    }
+    #footer img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #new #carousel img {
+        object-fit: cover;
+        max-height: 25vh;
+    }
+    #broadcast #group-name-item p {
+        max-width: 30ch;
+    }
+    #broadcast #group-name #group-name-item img {
+        filter: saturate(100%);
+    }
+    #broadcast #group-name #group-name-item #item-category {
+        filter: saturate(100%);
+    }
+    #broadcast #group-name #play-logo {
+        width: 25px;
+        object-fit: cover;
+    }
+    #broadcast #group-name-item #item-category {
+        font-size: 10px;
+        width: 60px;
+    }
+    #footer img {
+        width: 12%;
+    }
 }

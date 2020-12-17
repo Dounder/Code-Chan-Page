@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- <header> aqui esta la navbar con los links a las paginas -->
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container font-monospace">
@@ -69,8 +70,9 @@
             </div>
         </nav>
     </header>
+    <!-- </header> -->
 
-    <!-- Nuevo Contenido -->
+    <!-- Seccion del nuevo contenido, aqui esta un carousel de imagenes con los capitulos mas relevantes -->
     <section id="new">
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
@@ -111,19 +113,25 @@
             </a>
         </div>
     </section>
-    <!-- /Nuevo Contenido -->
+    <!-- /Seccion del nuevo contenido -->
 
-    <!-- Animes,mangas en emision y nuevos episodios -->
+    <!-- Animes,mangas en emision y nuevos episodios, esta divido en 3 secciones: 1. La sidebar en donde estan los animes y mangas en emision, 2. La seccion de los ultimos episodios y capitulos, 3. La seccion de los ultimos mangas y animes agredados -->
     <section id="broadcast">
         <div class="container mt-4 mb-5">
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="card">
+                <!-- Seccion de los animes y mangas en emision -->
+                <div class="col-12 col-md-5 col-lg-4 ">
+                    <div class="card navbar-expand-md navbar-light bg-light">
+                        <!-- Seccion donde se encuentra el titulo y boton para hacer collapse cuando la pantalla del dispositivo sea mas pequeña -->
                         <div id="group-title" class="card-header fs-4">
-                            <p class="my-auto">En emision <img class="float-end" src="https://img.icons8.com/cotton/64/000000/circled-play.png" /></p>
-
+                            <p class="my-auto">En emision
+                                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#group-name" aria-controls="group-name" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button></p>
                         </div>
-                        <ul id="group-name" class="list-group list-group-flush">
+                        <!-- /Seccion donde se encuentra el titulo y boton para hacer collapse cuando la pantalla del dispositivo sea mas pequeña -->
+                        <!-- Seccion donde se encuentra el nombre del contenido con un identificador de categoria -->
+                        <ul id="group-name" class="list-group list-group-flush collapse navbar-collapse">
                             <li class="list-group-item">
                                 <a id="group-name-item" href="#" class="d-inline-flex">
                                     <img id="play-logo" src="https://img.icons8.com/color/48/000000/circled-play--v1.png" />
@@ -160,19 +168,21 @@
                                 </a>
                             </li>
                         </ul>
+                        <!-- /Seccion donde se encuentra el nombre del contenido con un identificador de categoria -->
                     </div>
                 </div>
-                <div class="col-12 col-md-8"></div>
+                <!-- /Seccion de los animes y mangas en emision -->
+                <div class="col-12 col-md-7 col-lg-8"></div>
             </div>
         </div>
     </section>
     <!-- /Animes,mangas en emision y nuevos episodios -->
 
-    <!-- <footer> -->
+    <!-- <footer>, aqui esta toda la informacion acerca del sitio y derechos de autor-->
     <footer id="footer">
-        <div class="container pt-4">
+        <div class="container pt-4 pb-4">
             <div class="row">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-9">
                     <ul class="d-inline-flex">
                         <li class="pe-3"><a href="#">Terminos y condiciones</a></li>
                         <li class="pe-3">
@@ -183,15 +193,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-6">
-                    <div class="float-end">
-                        <a href="#">
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" />
-                        </a>
-                        <a href="#">
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" />
-                        </a>
-                    </div>
+                <div class="col-12 col-md-3 text-center">
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" />
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" />
+                    </a>
                 </div>
             </div>
         </div>
